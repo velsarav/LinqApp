@@ -9,7 +9,7 @@ namespace LinqApp
     {
         static void Main(string[] args)
         {
-             var record = DataLoader.Load(@"C:\Programming\Projects\csv");
+            var record = DataLoader.Load(@"C:\Programming\Projects\csv");
             var femaleTop10 = record
                 .Where(r => r.Gender == Gender.Female && r.Rank <= 10);
             var maleTop10 = from r in record
